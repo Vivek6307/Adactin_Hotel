@@ -14,7 +14,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src//test//java//com//feature",
-glue = "com.Stepdef",
+glue = "com.Stepdef",monochrome = true ,
 plugin = {
 
 		"pretty",
