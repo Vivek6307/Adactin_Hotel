@@ -20,9 +20,7 @@ plugin = {
 		"html:Report/Cucumber.html",
 		"json:Report/Adactinreport.json",
 	//"com.cucumber.listener.ExtentCucumberFormatter:Report/Cucmberreport.html",
-	//"com.avenstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
-//				
-
+	//"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 })
 
 public class Runner {
