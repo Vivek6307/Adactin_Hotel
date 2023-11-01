@@ -6,7 +6,8 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -29,8 +30,8 @@ public class Runner {
 	@BeforeClass
 	public static void setUp() {
 
-		WebDriverManager.edgedriver().setup();
-		driver = new EdgeDriver();
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 	}
